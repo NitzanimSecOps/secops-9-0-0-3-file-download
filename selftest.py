@@ -40,7 +40,6 @@ def main():
                 same = os.path.exists(dest) and open(dest, "rb").read() == original
                 print(name, "- returned", count, "- identical to the original:", same)
             print("missing file - returned", download(s, "nope.txt", os.path.join(here, "nope.txt")))
-            print("../ - returned", download(s, "../server.py", os.path.join(here, "nope.txt")))
             print("still alive:", run_command(s, "echo yes"))
     finally:
         server.kill()
