@@ -6,6 +6,7 @@ push — every push is graded automatically and the score syncs to Codo.
 ## Solve
 
     client.py
+    file_utils.py
     protocol.py
     server.py
 
